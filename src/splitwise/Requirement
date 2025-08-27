@@ -35,6 +35,12 @@ Ans:
     it would be stored in a database. The best way to ensure data consistency is to wrap
     the entire operation in a database transaction.
 
+--------------------------------------------------------------------------------------------------
+
+Scope of Improvement
+
+1. We could have used builder pattern for object creation
+2. We could have used Factory pattern for expense object creation (createEqualExpense/createPercentageExpense)
 
 
 
