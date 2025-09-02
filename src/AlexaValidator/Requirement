@@ -1,0 +1,10 @@
+Create a system that verifies custom commands written for Alexa. Each command is linked to particular words that activate the application. To guarantee the validity of commands, the solution will perform verification checks, ensuring adherence to predefined rules. In case of any violations, users will receive concise feedback indicating the specific rules that were breached and the words involved.
+
+
+Rules for validation:
+
+The first word of each command has to be "Alexa", since that's our wake word.
+The second word has to be a verb.
+Customers don't like repeating words. No word should appear twice in a row.
+Commands with too many occurrences of the same word are awkward to say, even if they aren't in a row. No word should appear more than twice in the entire phrase.
+

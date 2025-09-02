@@ -19,7 +19,9 @@ class RuleEngine {
         List<Violation> violations = new ArrayList<>();
 
         for (ValidationRule rule : rules) {
-            rule.validate(tokens).ifPresent(violations::add);
+            if(rule.validate(tokens).isPresent()) {
+                violations.add(rule.validate(tokens).get());
+            }
         }
         return new ValidationResult(violations);
     }
